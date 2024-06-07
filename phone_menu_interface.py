@@ -8,7 +8,7 @@
 # get input from user, if contacts, link to contacts, etc.
 from feature-internet-search import search_system
 from feature-manage-contacts import manage_contacts
-from feature-tasks-features import phone_tasks
+from tasks_features import phone_tasks
 
 print("Hello, and welcome to your phone main menu. Please make a selection.")
 user_input = ''
