@@ -8,7 +8,7 @@
 # get input from user, if contacts, link to contacts, etc.
 from feature-internet-search import search_system
 from feature-manage-contacts import manage_contacts
-from feature tasks_features import 
+from feature-tasks-features import phone_tasks
 
 print("Hello, and welcome to your phone main menu. Please make a selection.")
 user_input = ''
@@ -25,9 +25,9 @@ while user_input != "Quit":
  elif user_input == "Internet":
   search_system()
  elif user_input == "Tasks and Subtasks":
-  # tasks function
+  phone_tasks()
  elif user_input == "Quit":
   print("Exiting Menu")
  else:
-  print("Invalid Input")
+  print("Invalid Selection")
 
