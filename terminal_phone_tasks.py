@@ -1,6 +1,6 @@
 # Terminal Phone
-
-def phone_tasks():
+current_tasks = []
+def phone_tasks(current_tasks):
     command = ''
     while(command != 'exit'):
         command = input()
