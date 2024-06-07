@@ -9,7 +9,7 @@ def manage_contacts(current_contact_dict):
           'R' to read all contacts
           'Q' to return to main menu: """)
 
-    user_input = ''
+    user_input = input('\n')
 
     while user_input != "Quit":
 
@@ -18,6 +18,11 @@ def manage_contacts(current_contact_dict):
 #create contact
         if(user_input == 'C'):
             print("Creating Contact")
+            print("Enter New Contact's First Name: \n")
+            print("Enter New Contact's Last Name: \n")
+            print("Enter New Contact's Phone Number: \n")
+
+            # updated_contact_dict(last_name):
             
 
 #update contact
@@ -41,4 +46,5 @@ def manage_contacts(current_contact_dict):
         else:
             print("Improper input")
 
-
+current_dict = {}
+manage_contacts(current_dict)
