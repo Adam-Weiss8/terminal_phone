@@ -5,7 +5,7 @@
 
 
 def phone_tasks(current_tasks):
-    current_prompt = input("What would you like to do with your tasks? Create, update, delete, or read? When done type exit")
+    current_prompt = input("What would you like to do with your tasks? Create, update, delete, or read? When done type exit\n")
     command = ''
     while(command != 'exit'):
         command = input()
