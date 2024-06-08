@@ -13,24 +13,24 @@ from terminal_phone_tasks import phone_tasks
 contacts = {}
 tasks = []
 
-print("Hello, and welcome to your phone main menu. Please make a selection.")
+print("[green]Hello, and welcome to your phone main menu. Please make a selection.[/green]")
 user_input = ''
 while user_input != "Quit":
  print("""
     Enter the number for your selection or "Quit"
-     1. Contacts
-     2. Internet
-     3. Tasks and Subtasks
+     [green]1.[/green] [blue]Contacts[/blue]
+     [green]2.[/green] [red]Internet[/red]
+     [green]3.[/green] [purple]Tasks and Subtasks[/purple]
  """)
- user_input = input("Enter your selection: ")
- if user_input == "1":
-  contacts = manage_contacts(contacts)
- elif user_input == "2":
-  search_system(1)
- elif user_input == "3":
-  tasks = phone_tasks(tasks)
+    user_input = input("[green]Enter your selection:[/green] ")
+ if user_input == "Contacts":
+  manage_contacts()
+ elif user_input == "Internet":
+  search_system()
+ elif user_input == "Tasks and Subtasks":
+  phone_tasks()
  elif user_input == "Quit":
   print("Exiting Menu")
  else:
-  print("Invalid Selection")
+  print("[red]Invalid Selection[/red]")
 
