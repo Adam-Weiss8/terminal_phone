@@ -22,13 +22,13 @@ while user_input != "Quit":
      [green]2.[/green] [red]Internet[/red]
      [green]3.[/green] [purple]Tasks and Subtasks[/purple]
  """)
-    user_input = input("[green]Enter your selection:[/green] ")
- if user_input == "Contacts":
-  manage_contacts()
- elif user_input == "Internet":
-  search_system()
- elif user_input == "Tasks and Subtasks":
-  phone_tasks()
+ user_input = input("[green]Enter your selection:[/green] ")
+ if user_input == "1":
+  manage_contacts(contacts)
+ elif user_input == "2":
+  search_system(1)
+ elif user_input == "3":
+  phone_tasks(tasks)
  elif user_input == "Quit":
   print("Exiting Menu")
  else:
