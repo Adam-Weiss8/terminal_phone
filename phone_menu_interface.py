@@ -6,26 +6,29 @@
 # "Tasks and Subtasks" dropdown should have Create, Update, Delete, Read
 
 # get input from user, if contacts, link to contacts, etc.
-from feature-internet-search import search_system
-from feature-manage-contacts import manage_contacts
-from tasks_features import phone_tasks
+from feature_internet_search import search_system
+from feature_manage_contacts import manage_contacts
+from terminal_phone_tasks import phone_tasks
+
+contacts = {}
+tasks = []
 
 print("Hello, and welcome to your phone main menu. Please make a selection.")
 user_input = ''
 while user_input != "Quit":
  print("""
-    Enter the number for your selection
+    Enter the number for your selection or "Quit"
      1. Contacts
      2. Internet
      3. Tasks and Subtasks
  """)
-    user_input = input("Enter your selection: ")
- if user_input == "Contacts":
-  manage_contacts()
- elif user_input == "Internet":
-  search_system()
- elif user_input == "Tasks and Subtasks":
-  phone_tasks()
+ user_input = input("Enter your selection: ")
+ if user_input == "1":
+  contacts = manage_contacts(contacts)
+ elif user_input == "2":
+  search_system(1)
+ elif user_input == "3":
+  tasks = phone_tasks(tasks)
  elif user_input == "Quit":
   print("Exiting Menu")
  else:

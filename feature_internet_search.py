@@ -70,5 +70,3 @@ def search_system(run_code):                                                # In
             search_system(9)
         else:
             print("Invalid input")
-
-search_system(1)

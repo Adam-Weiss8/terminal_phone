@@ -45,6 +45,3 @@ def manage_contacts(current_contact_dict):
 
         else:
             print("Improper input")
-
-current_dict = {}
-manage_contacts(current_dict)
